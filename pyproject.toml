@@ -20,7 +20,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["justpath"]
+packages = ["justpath", "sandbox", "tests"]
 
 [dependency-groups]
 dev = [
