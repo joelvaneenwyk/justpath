@@ -1,9 +1,9 @@
 grill:
-   poetry run pytest
-   poetry run mypy .
-   poetry run isort . --float-to-top
-   poetry run black .
-   poetry run ruff . --fix
-  
+   uv run pytest
+   uv run mypy .
+   uv run isort . --float-to-top
+   uv run black .
+   uv run ruff check --fix
+
 md:
   npx prettier README.md --write
