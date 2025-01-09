@@ -198,7 +198,7 @@ when counting and purging duplicate directories.
 `justpath` can dump a list of paths from `PATH` to JSON.
 You may add `--correct` flag to list only correct paths.
 
-```
+```bash
 justpath --correct --json
 ```
 
@@ -224,7 +224,7 @@ C:\tools\Cmder\bin;C:\tools\Cmder\vendor\bin;C:\Windows\system32;C:\Windows;...
 16 duplicates
 ```
 
-```
+```json
 λ justpath --count --json
 {"total": 52, "invalid": 1, "duplicates": 16}
 ```
@@ -280,7 +280,7 @@ Installation via conda or homebrew not yet supported.
 
 After installation you can try the command line script:
 
-```
+```bash
 justpath --help
 ```
 
@@ -307,11 +307,15 @@ Some of positive feedback I got about the `justpath` package:
 > Not sure I'll use it since it is one more thing to install and remember,
 > but the author had an itch and scratched it. Well done.
 
+---
+
 > It's handy to see your path entries in a list.
 > Checking whether each entry is a valid location is neat, too.
 > But even better, from my perspective, you published the code and got feedback from people,
 > including related implementations. That’s worth it, in my book.
 > Edit: I like the includes part, too.
+
+---
 
 > I think this is a cool package.
 > Some of my first scripts in several languages have just been messing with file system abstractions.
