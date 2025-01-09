@@ -87,7 +87,7 @@ class PathVariable(UserDict[int, Path]):
     # not tested
     def append(self, path: Path):
         key = 1 + max(self.keys())
-        self.data[key] = Directory.from_path(path)
+        self.data[key] = Directory.from_path(str(path))
 
 
 @dataclass
@@ -175,7 +175,9 @@ def show(
     color: option("Use color to highlight errors.") = True,  # type: ignore
     string: option("Print a single string suitable as PATH content.") = False,  # type: ignore
     json: option("Format output as JSON.") = False,  # type: ignore
-    shell_equivalents: option("Print useful commands for bash, cmd and Powershell.") = False,  # type: ignore
+    shell_equivalents: option(  # type: ignore
+        "Print useful commands for bash, cmd and Powershell."
+    ) = False,
 ):
     """Show directories from PATH."""
     if shell_equivalents:
@@ -267,7 +269,7 @@ def get_comment(row: Row) -> str:
     items = []
     if row.directory.canonical != row.directory.resolved:
         items.append(f"resolves to {row.directory.resolved}")
-    if row.error == FileNotFoundError:
+    if isinstance(row.error, FileNotFoundError):
         items.append("directory does not exist")
     elif row.error == NotADirectoryError():
         items.append("not a directory")
