@@ -25,7 +25,7 @@ class OneLiner:
         if self.cmd:
             print("cmd.exe (Windows):\n ", self.cmd)
         if self.ps:
-            print("poweshell (Windows):\n ", self.ps)
+            print("powershell (Windows):\n ", self.ps)
         if self.python:
             print("python (any OS):\n ", self.python_command)
         print("justpath (any OS):\n ", self.justpath)
