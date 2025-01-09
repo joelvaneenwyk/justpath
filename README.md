@@ -13,7 +13,7 @@ Just a simple utility to explore `PATH` environment variable on Windows, Linux a
 
 ## Workflow
 
-`justpath` shows your `PATH` environment variable line by line with numbering, comments and highlighing and helps detecting invalid or duplicate directories on your `PATH`.
+`justpath` shows your `PATH` environment variable line by line with numbering, comments and highlighting and helps detecting invalid or duplicate directories on your `PATH`.
 
 You can also create a modified version of `PATH` string and use it in your shell startup script or through an environment manager.
 Note that `justpath` itself cannot change your shell `PATH`.
@@ -272,7 +272,7 @@ or shorter:
 pip install git+https://github.com/epogrebnyak/justpath.git
 ```
 
-### Other package managers 
+### Other package managers
 
 Installation via conda or homebrew not yet supported.
 
@@ -316,7 +316,6 @@ Some of positive feedback I got about the `justpath` package:
 > I think this is a cool package.
 > Some of my first scripts in several languages have just been messing with file system abstractions.
 > Files and file paths are much more complex than most people think.
-
 
 ## Development notes
 

@@ -1,11 +1,17 @@
+asciicast
 celerybeat
+clig
 colorama
 Connor
 cython
 Cython
 dmypy
+docopt
+envio
+enviroment
 Evgeny
 exceptiongroup
+futher
 htmlcov
 iniconfig
 ipython
@@ -17,9 +23,12 @@ mypy
 nosetests
 oneliners
 orginial
+ouput
+pathdebug
 pathit
 pathspec
 Pipfile
+pipx
 platformdirs
 pluggy
 Pogrebnyak
@@ -34,7 +43,9 @@ pytype
 ropeproject
 scrapy
 Scrapy
+Screencast
 sdist
+sdkman
 setuptools
 shellingham
 Spyder
@@ -43,3 +54,4 @@ spyproject
 tomli
 typer
 webassets
+Евгений
