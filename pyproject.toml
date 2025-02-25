@@ -11,6 +11,11 @@ dependencies = ["colorama>=0.4.6", "typer>=0.15.1"]
 [project.urls]
 repository = "https://github.com/epogrebnyak/justpath"
 
+[tool.uv]
+managed = true
+package = true
+link-mode = "copy"
+
 [project.scripts]
 pathit = "justpath.show:typer_app"
 justpath = "justpath.show:typer_app"
